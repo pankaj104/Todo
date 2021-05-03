@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--    <com.google.android.material.appbar.AppBarLayout-->
+    <!--        android:id="@+id/appBarLayout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+
+    <!--        <androidx.appcompat.widget.Toolbar-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            app:title="New Task"-->
+    <!--           style="bold"-->
+    <!--            android:background="@color/green"-->
+    <!--            />-->
+    <!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+    <TextView
+        android:id="@+id/titeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Task Title"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/titleInpLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:boxStrokeColor="@color/purple_200"
+        app:hintTextColor="@color/purple_500">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/todoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Task tile"
+            android:inputType="textCapWords"
+            android:textSize="18sp"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Enter intial value"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColorHint="@color/black"
+        android:hint="Enter intial value"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Enter Max value"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_marginLeft="20dp"
+        android:hint="Enter final value"
+        android:inputType="number"
+        android:textSize="18sp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Monthly goal target"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp">
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp" />
+
+        <ImageView
+            android:id="@+id/imgAddCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/playlist"
+            app:tint="@color/black" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+
+        android:paddingLeft="20dp"
+        android:rotation="0"
+        android:rotationY="0"
+        android:text="SAVE TASK"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>
